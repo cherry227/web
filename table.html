@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap.css">
+	<style>
+		body {
+		  color: #777;
+		  background-color: black;
+		  background-image: url(6890.jpg);
+		  background-size: cover;
+		  }
+
+		.navbar {
+		  background-color: #334D33;
+		  border: 0;
+		  opacity: 0.95;
+		  margin-bottom: 1px; 
+		  z-index: 100;
+		}
+		.navbar li a, .navbar .navbar-brand { 
+		  color: #d5d5d5;
+		}
+
+		.open .dropdown-toggle {
+		  color: #fff;
+		  background-color: #555 !important;
+		}
+		.dropdown-menu  a { 
+		  color: black !important;
+		}
+		
+
+		.drophover:hover > .dropdown-menu{
+			display: block;
+		}
+
+		h1 {
+			color: #334D33;
+			font-family: Indie+Flower;
+			text-align: center;
+		}
+		.breadcrumb{
+			opacity: 0.7;
+		}
+
+		table {
+			background-color: #334D33
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="main.html">Bootstrap</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown drophover">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню</a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="main.html">Главная</a>
+							<a class="dropdown-item" href="tasks.html">Задания <span class="badge">New</span></a>
+							<div class="dropdown-divider"></div>
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown drophover dropright">
+									<div class="btn-group dropright drophover">
+										<a class="dropdown-toggle dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выпадающее меню</a>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Пустая ссылка</a>
+												<a class="dropdown-item" href="#">Пустая ссылка</a>
+											</div>
+									</div>
+								</li>
+							</ul>		
+						</div>
+				</li>	
+			</ul>
+		</div>
+	</nav>
+
+  		
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="main.html">Главная</a></li>
+			<li class="breadcrumb-item active" aria-current="page" data-toggle="tooltip" data-placement="right" title="Задания"><a href="tasks.html">Задания</a></li>
+			<li class="breadcrumb-item">Формулы</li>
+		</ol>
+	</nav>
+
+	<h1> Математические формулы</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-xs-8 offset-xs-2">
+	  		<table class="table table-striped table-dark">
+				<thead>
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">Название</th>
+				  <th scope="col">Формула</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Корень</td>
+						<td>
+						  	<math>
+							    <mroot>
+							    	<mrow>
+							    		<mi>x</mi><mo>+</mo><mn>2</mn>
+							    	</mrow>
+							    	<mn>3</mn>
+							    </mroot>
+							</math>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Дробь</td>
+						<td>
+							<math>
+								<mfrac>
+									<mrow> <mi>12m</mi><mo>+</mo><mn>45n</mn> </mrow>
+									<mn>3mn</mn>
+								</mfrac>
+							</math>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Сумма</td>
+						<td>
+							<math>
+								<munderover>
+									<mi>&Sum;</mi>
+									<mrow>
+										<mi>x</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>n</mi>
+								</munderover>
+								<mrow>
+									<mn>2</mn> <mi>x</mi>
+									<mo>+</mo>
+									<mn>1</mn>
+								</mrow>
+							</math>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Интеграл</td>
+						<td>
+							<math>
+								<munderover>
+									<mi>&int;</mi>
+									<mrow>
+									<mn>0</mn>
+									</mrow>
+									<mi>1</mi>
+								</munderover>
+								<mrow>
+									<mi>xⅆx</mi>
+								</mrow>
+							</math>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Предел</td>
+						<td>
+							<math>
+								<munderover>
+									<mi>lim</mi>
+									<mrow>
+										<mi>x</mi>
+										<mo>&rarr;</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi></mi>
+								</munderover>
+								<mrow>
+									 <mfrac>
+										<mrow> <mi>1</mi></mrow>
+										<mn>x</mn>
+									</mfrac>
+								</mrow>
+							</math>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	  		</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
+</html>

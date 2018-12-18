@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap.css">
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+		body {
+		  color: #777;
+		  background-color: black;
+		  background-image: url(6890.jpg);
+		  background-size: cover;
+		  }
+
+		.navbar {
+		  background-color: #334D33;
+		  border: 0;
+		  opacity: 0.95;
+		  margin-bottom: 1px; 
+		  z-index: 100;
+		}
+		.navbar li a, .navbar .navbar-brand { 
+		  color: #d5d5d5;
+		}
+
+		.open .dropdown-toggle {
+		  color: #fff;
+		  background-color: #555 !important;
+		}
+		.dropdown-menu  a { 
+		  color: black !important;
+		}
+		
+
+		.drophover:hover > .dropdown-menu{
+			display: block;
+		}
+
+		h1 {
+			color: white;
+			font-family: Indie+Flower;
+		}
+		.breadcrumb{
+			opacity: 0.7;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="main.html">Bootstrap</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown drophover">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню</a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="main.html">Главная</a>
+							<a class="dropdown-item" href="tasks.html">Задания <span class="badge">New</span></a>
+							<div class="dropdown-divider"></div>
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown drophover dropright">
+									<div class="btn-group dropright drophover">
+										<a class="dropdown-toggle dropdown-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выпадающее меню</a>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Пустая ссылка</a>
+												<a class="dropdown-item" href="#">Пустая ссылка</a>
+											</div>
+									</div>
+								</li>
+							</ul>		
+						</div>
+				</li>	
+			</ul>
+		</div>
+	</nav>			
+  		
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="main.html">Главная</a></li>
+			<li class="breadcrumb-item active" aria-current="page" data-toggle="tooltip" data-placement="right" title="Задания"><a href="tasks.html">Задания</a></li>
+			<li class="breadcrumb-item">Рисунок</li>
+		</ol>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 ">
+					<svg height="522" width="900">
+
+						<polyline  points="130,10 350,170 560,170 700,120 735,145 600,290 650,420 675,520 220,520 210,419 250,219 130,10" fill="#FFE747" stroke="BLACK" stroke-width="1"/> 
+
+						<polyline  points="130,10 198,60 198, 130" fill="BLACK" stroke="black" stroke-width="1"/> 
+						
+						<polygon points="216,389 226,340 250,335 275,340 295,360 295,385 285,405 265,415 240,415 220,394" fill="red" stroke="black" stroke-width="1"/>
+
+						<polygon points="700,120 798,80 700,182" fill="black" stroke="BLACK" stroke-width="1"/>
+
+						<polyline points="526,340 550,335 575,340 595,360 595,385 585,405 565,415 540,415 520,396 515,360 526,340 " fill="red" stroke="black" stroke-width="1"/>
+						
+						<polyline points=" 362,380 370,370 405,365 425,370 435,385 435,415 415,430 370,430 360,410  360,410 362,380" fill="#ffb057" stroke="black" stroke-width="1"/>
+						
+						<ellipse cx="397" cy="330" rx="17" ry="5" fill="black" />
+
+						<circle cx="317" cy="280" r="27" fill="black" />
+						<circle cx="302" cy="270" r="9" fill="white" />
+
+						<circle cx="475" cy="280" r="27" fill="black" />
+						<circle cx="460" cy="270" r="9" fill="white" />
+
+					</svg>
+			</div>
+		</div>
+	</div>
+
+		
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
+</html>
