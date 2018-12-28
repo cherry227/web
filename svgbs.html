@@ -4,52 +4,8 @@
 	<title>Bootstrap</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="bootstrap.css">
-	
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-		body {
-		  color: #777;
-		  background-color: black;
-		  background-image: url(6890.jpg);
-		  background-size: cover;
-		  }
-
-		.navbar {
-		  background-color: #334D33;
-		  border: 0;
-		  opacity: 0.95;
-		  margin-bottom: 1px; 
-		  z-index: 100;
-		}
-		.navbar li a, .navbar .navbar-brand { 
-		  color: #d5d5d5;
-		}
-
-		.open .dropdown-toggle {
-		  color: #fff;
-		  background-color: #555 !important;
-		}
-		.dropdown-menu  a { 
-		  color: black !important;
-		}
-		
-
-		.drophover:hover > .dropdown-menu{
-			display: block;
-		}
-
-		h1 {
-			color: white;
-			font-family: Indie+Flower;
-		}
-		.breadcrumb{
-			opacity: 0.7;
-		}
-
-
-
-	</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark">
@@ -84,7 +40,7 @@
   		
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="main.html">Главная</a></li>
+			<li class="breadcrumb-item" data-toggle="tooltip" data-placement="right" title="Главная"><a href="main.html">Главная</a></li>
 			<li class="breadcrumb-item active" aria-current="page" data-toggle="tooltip" data-placement="right" title="Задания"><a href="tasks.html">Задания</a></li>
 			<li class="breadcrumb-item">Рисунок</li>
 		</ol>
